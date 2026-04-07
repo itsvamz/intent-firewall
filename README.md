@@ -36,7 +36,7 @@ ArmorClaw (4-Layer Enforcement Pipeline)
       ↓               ↓
   Execute         Log + Explain
 ```
-<img width="1408" height="768" alt="Logging and Audit Layer" src="https://github.com/user-attachments/assets/38f903ef-45e1-4934-be89-43fc66d672aa" />
+<img width="1408" height="768" alt="Logging and Audit Layer" src="https://github.com/user-attachments/assets/5a6e1cf7-e7e2-403e-9446-bbb1cf687da5" />
 
 
 
@@ -54,7 +54,7 @@ ArmorClaw (4-Layer Enforcement Pipeline)
 ---
 ## Intent Graph Firewall: Deviation Detection in Autonomous Agents
 
-<img width="1408" height="768" alt="Logging and Audit Layer" src="https://github.com/user-attachments/assets/5a6e1cf7-e7e2-403e-9446-bbb1cf687da5" />
+<img width="1920" height="1080" alt="Personal Selling" src="https://github.com/user-attachments/assets/ad9779dd-3f47-45ea-b45e-e5343b3fa677" /> 
 
 ---
 
