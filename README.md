@@ -53,7 +53,8 @@ ArmorClaw (4-Layer Enforcement Pipeline)
 ---
 ## Intent Graph Firewall: Deviation Detection in Autonomous Agents
 
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/1a1f6e8f-dded-4ae3-abbd-0ee4c63e749f" />
+<img width="1920" height="1080" alt="Personal Selling" src="https://github.com/user-attachments/assets/5da92a4d-d3e2-4707-b226-c09c5afdfcaa" />
+
 
 ---
 
