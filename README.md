@@ -50,7 +50,7 @@ ArmorClaw (4-Layer Enforcement Pipeline)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 intent-firewall/
