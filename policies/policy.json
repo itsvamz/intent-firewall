@@ -1,0 +1,32 @@
+{
+  "max_trade_amount": 10000,
+  "allowed_assets": ["TSLA", "AAPL", "MSFT", "GOOGL", "AMZN"],
+  "allowed_actions": {
+    "analyze": ["fetch_data", "analyze", "recommend"],
+    "buy": ["fetch_data", "analyze", "recommend", "buy"],
+    "sell": ["fetch_data", "analyze", "recommend", "sell"],
+    "research": ["fetch_data", "analyze", "recommend"]
+  },
+  "blocked_actions": ["send_external_api", "export_portfolio", "delete_records", "modify_permissions"],
+  "risk_threshold": 0.65,
+  "max_trades_per_session": 3,
+  "require_analysis_before_trade": true,
+  "delegation_rules": {
+    "research_agent": {
+      "can_fetch_data": true,
+      "can_analyze": true,
+      "can_recommend": true,
+      "can_trade": false,
+      "can_send_data": false,
+      "max_amount": 0
+    },
+    "trade_agent": {
+      "can_fetch_data": true,
+      "can_analyze": true,
+      "can_recommend": false,
+      "can_trade": true,
+      "can_send_data": false,
+      "max_amount": 10000
+    }
+  }
+}

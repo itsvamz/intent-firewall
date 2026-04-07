@@ -1,0 +1,317 @@
+[
+  {
+    "verdict_id": "caeaafce",
+    "timestamp": "2026-04-07T21:39:18.678274",
+    "action": {
+      "type": "fetch_data",
+      "asset": "AAPL",
+      "amount": 0,
+      "description": "Fetching real-time market data from Alpaca API",
+      "agent": "FinAgent-Alpha",
+      "agent_role": "research_agent"
+    },
+    "current_step": "START",
+    "next_step": "fetch_data",
+    "verdict": "ALLOW",
+    "block_reason": null,
+    "checks": [
+      {
+        "layer": "1",
+        "name": "Intent Graph Firewall",
+        "passed": true,
+        "message": "Transition 'START' \u2192 'fetch_data' is valid in intent graph"
+      },
+      {
+        "layer": "2",
+        "name": "Policy Rule Engine",
+        "passed": true,
+        "message": "All policy rules passed"
+      },
+      {
+        "layer": "3",
+        "name": "Risk Scoring Model",
+        "passed": true,
+        "message": "Risk OK: Score 0.08 below threshold 0.65",
+        "detail": {
+          "score": 0.08,
+          "threshold": 0.65,
+          "is_high_risk": false,
+          "factors": {
+            "trade_size": 0.0,
+            "asset_volatility": 0.4,
+            "action_type": 0.0,
+            "frequency": 0.0,
+            "sequence_anomaly": 0.0
+          },
+          "weights": {
+            "trade_size": 0.3,
+            "asset_volatility": 0.2,
+            "action_type": 0.25,
+            "frequency": 0.15,
+            "sequence_anomaly": 0.1
+          },
+          "verdict": "ACCEPTABLE"
+        }
+      },
+      {
+        "layer": "4",
+        "name": "Shadow Simulator",
+        "passed": true,
+        "message": "Shadow OK: Read-only action 'fetch_data' is safe",
+        "detail": {
+          "action": "fetch_data"
+        }
+      }
+    ],
+    "session_state": {
+      "trade_count": 0,
+      "analyzed": false,
+      "actions_taken": [
+        "fetch_data",
+        "analyze",
+        "recommend"
+      ]
+    },
+    "risk_score": 0.08,
+    "layers_passed": 4,
+    "layers_total": 4
+  },
+  {
+    "verdict_id": "90f5124d",
+    "timestamp": "2026-04-07T21:39:18.678298",
+    "action": {
+      "type": "analyze",
+      "asset": "AAPL",
+      "amount": 0,
+      "description": "Running technical + fundamental analysis on stock",
+      "agent": "FinAgent-Alpha",
+      "agent_role": "research_agent"
+    },
+    "current_step": "fetch_data",
+    "next_step": "analyze",
+    "verdict": "ALLOW",
+    "block_reason": null,
+    "checks": [
+      {
+        "layer": "1",
+        "name": "Intent Graph Firewall",
+        "passed": true,
+        "message": "Transition 'fetch_data' \u2192 'analyze' is valid in intent graph"
+      },
+      {
+        "layer": "2",
+        "name": "Policy Rule Engine",
+        "passed": true,
+        "message": "All policy rules passed"
+      },
+      {
+        "layer": "3",
+        "name": "Risk Scoring Model",
+        "passed": true,
+        "message": "Risk OK: Score 0.08 below threshold 0.65",
+        "detail": {
+          "score": 0.08,
+          "threshold": 0.65,
+          "is_high_risk": false,
+          "factors": {
+            "trade_size": 0.0,
+            "asset_volatility": 0.4,
+            "action_type": 0.0,
+            "frequency": 0.0,
+            "sequence_anomaly": 0.0
+          },
+          "weights": {
+            "trade_size": 0.3,
+            "asset_volatility": 0.2,
+            "action_type": 0.25,
+            "frequency": 0.15,
+            "sequence_anomaly": 0.1
+          },
+          "verdict": "ACCEPTABLE"
+        }
+      },
+      {
+        "layer": "4",
+        "name": "Shadow Simulator",
+        "passed": true,
+        "message": "Shadow OK: Read-only action 'analyze' is safe",
+        "detail": {
+          "action": "analyze"
+        }
+      }
+    ],
+    "session_state": {
+      "trade_count": 0,
+      "analyzed": true,
+      "actions_taken": [
+        "fetch_data",
+        "analyze",
+        "recommend"
+      ]
+    },
+    "risk_score": 0.08,
+    "layers_passed": 4,
+    "layers_total": 4
+  },
+  {
+    "verdict_id": "04d77f4a",
+    "timestamp": "2026-04-07T21:39:18.678317",
+    "action": {
+      "type": "recommend",
+      "asset": "AAPL",
+      "amount": 0,
+      "description": "Generating investment recommendation based on analysis",
+      "agent": "FinAgent-Alpha",
+      "agent_role": "research_agent"
+    },
+    "current_step": "analyze",
+    "next_step": "recommend",
+    "verdict": "ALLOW",
+    "block_reason": null,
+    "checks": [
+      {
+        "layer": "1",
+        "name": "Intent Graph Firewall",
+        "passed": true,
+        "message": "Transition 'analyze' \u2192 'recommend' is valid in intent graph"
+      },
+      {
+        "layer": "2",
+        "name": "Policy Rule Engine",
+        "passed": true,
+        "message": "All policy rules passed"
+      },
+      {
+        "layer": "3",
+        "name": "Risk Scoring Model",
+        "passed": true,
+        "message": "Risk OK: Score 0.09 below threshold 0.65",
+        "detail": {
+          "score": 0.093,
+          "threshold": 0.65,
+          "is_high_risk": false,
+          "factors": {
+            "trade_size": 0.0,
+            "asset_volatility": 0.4,
+            "action_type": 0.05,
+            "frequency": 0.0,
+            "sequence_anomaly": 0.0
+          },
+          "weights": {
+            "trade_size": 0.3,
+            "asset_volatility": 0.2,
+            "action_type": 0.25,
+            "frequency": 0.15,
+            "sequence_anomaly": 0.1
+          },
+          "verdict": "ACCEPTABLE"
+        }
+      },
+      {
+        "layer": "4",
+        "name": "Shadow Simulator",
+        "passed": true,
+        "message": "Shadow OK: Read-only action 'recommend' is safe",
+        "detail": {
+          "action": "recommend"
+        }
+      }
+    ],
+    "session_state": {
+      "trade_count": 0,
+      "analyzed": true,
+      "actions_taken": [
+        "fetch_data",
+        "analyze",
+        "recommend"
+      ]
+    },
+    "risk_score": 0.093,
+    "layers_passed": 4,
+    "layers_total": 4
+  },
+  {
+    "verdict_id": "8c900535",
+    "timestamp": "2026-04-07T21:39:18.678335",
+    "action": {
+      "type": "buy",
+      "asset": "AAPL",
+      "amount": 5000,
+      "description": "Placing buy order via paper trading API",
+      "agent": "FinAgent-Alpha",
+      "agent_role": "research_agent"
+    },
+    "current_step": "recommend",
+    "next_step": "buy",
+    "verdict": "BLOCK",
+    "block_reason": "Rule BLOCKED: Agent role 'research_agent' cannot execute trades",
+    "checks": [
+      {
+        "layer": "1",
+        "name": "Intent Graph Firewall",
+        "passed": true,
+        "message": "Transition 'recommend' \u2192 'buy' is valid in intent graph"
+      },
+      {
+        "layer": "2",
+        "name": "Policy Rule Engine",
+        "passed": false,
+        "message": "Rule BLOCKED: Agent role 'research_agent' cannot execute trades"
+      },
+      {
+        "layer": "3",
+        "name": "Risk Scoring Model",
+        "passed": true,
+        "message": "Risk OK: Score 0.19 below threshold 0.65",
+        "detail": {
+          "score": 0.188,
+          "threshold": 0.65,
+          "is_high_risk": false,
+          "factors": {
+            "trade_size": 0.15,
+            "asset_volatility": 0.4,
+            "action_type": 0.25,
+            "frequency": 0.0,
+            "sequence_anomaly": 0.0
+          },
+          "weights": {
+            "trade_size": 0.3,
+            "asset_volatility": 0.2,
+            "action_type": 0.25,
+            "frequency": 0.15,
+            "sequence_anomaly": 0.1
+          },
+          "verdict": "ACCEPTABLE"
+        }
+      },
+      {
+        "layer": "4",
+        "name": "Shadow Simulator",
+        "passed": true,
+        "message": "Shadow OK: Buy 27.84 shares of AAPL @ $179.6",
+        "detail": {
+          "action": "buy",
+          "asset": "AAPL",
+          "amount": 5000,
+          "price": 179.6,
+          "shares": 27.8396,
+          "cash_before": 50000.0,
+          "cash_after": 45000.0,
+          "exposure_impact": 5000
+        }
+      }
+    ],
+    "session_state": {
+      "trade_count": 0,
+      "analyzed": true,
+      "actions_taken": [
+        "fetch_data",
+        "analyze",
+        "recommend"
+      ]
+    },
+    "risk_score": 0.188,
+    "layers_passed": 3,
+    "layers_total": 4
+  }
+]
