@@ -36,6 +36,8 @@ ArmorClaw (4-Layer Enforcement Pipeline)
       ↓               ↓
   Execute         Log + Explain
 ```
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/a3d45ef5-5b9b-4a8e-b910-3f04ce5d6759" />
+
 
 ---
 
@@ -47,6 +49,11 @@ ArmorClaw (4-Layer Enforcement Pipeline)
 | 2 | **Policy Rule Engine** | Enforces JSON policies: trade limits, asset whitelist, session caps |
 | 3 | **Risk Scoring Model** | Multi-factor weighted score; blocks high-risk actions |
 | 4 | **Shadow Simulator** | Dry-runs action in a mock environment before real execution |
+
+---
+## Intent Graph Firewall: Deviation Detection in Autonomous Agents
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/1a1f6e8f-dded-4ae3-abbd-0ee4c63e749f" />
 
 ---
 
