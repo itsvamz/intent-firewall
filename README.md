@@ -9,9 +9,11 @@
 
 IntentShield is a **runtime enforcement layer** for autonomous AI agents operating in financial systems.
 
-Built on the **Intent Graph Firewall (IGF)** architecture, it ensures agents do **exactly what they were instructed — and nothing more.**
+Built on the **Intent Graph Firewall (IGF)** architecture, it ensures agents do **exactly what they were instructed, and nothing more.**
 
 This is NOT a trading bot. This is a **security + governance layer** that wraps around any AI agent.
+
+DEMO : https://drive.google.com/file/d/1JGSjCfOqkMQqv_2piBcbTmKA13089k59/view?usp=sharing
 
 ---
 
